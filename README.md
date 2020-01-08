@@ -79,14 +79,30 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Code details
 ```bash
   - apiService (service folder): has a method called getAllCelebrities() with parameter. This method calls http get method. API Url is passed to the http get method from app.config.ts using @Inject(). http get method fecthes data from the server and return an Observable
+  
+  
   - CelebrityService (service folder) 
+  
       -- methods are:
+      
           -- getCelebrities(): this method get all celebrities from the databse by calling  getAllCelebrities in API Service. It returns Observable
+          
           -- filterByFirstName(): filters celebrities list using firstname. It accepts firstname as parameter
+          
           -- filterByLastName(): filters celebrities list using lastname. It accepts lastname as parameter
+          
           -- filterByProfession(): filters celebrities list using profession. It accepts profession as parameter
+   
+   - ApiService  (service folder)
+   
+        -- getCelebrities(): this method get all celebrities from the databse by calling http get. It returns Observable
+        
+        
   - celebrity (entity folder): is the celebrity class
+  
       -- methods are: setId(id:number), getId(), setFirstName(firstName:string), getFirstName(), setLastName(lastName:string), getLastName(), setProfession(profession:string),  getProfession(), setProfile(profile:any), getProfile()
+      
+      
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
