@@ -27,7 +27,52 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
 ## Build Code Structure
-|-- src
+| -- src
+  |
+  | -- app 
+  |
+    | -- celebrity
+    | 
+      | -- celebrity.component.css
+      |
+      | -- celebrity.component.html
+      |
+      | -- celebrity.component
+    |
+    | -- entity
+    |
+      | -- celebrity
+      |
+    |
+    | -- service
+    |
+      | -- apiService
+      |
+      | -- celebrity.Service
+    |  
+    | -- test
+    |
+      |-- celebrityTest
+      |
+        |-- celebrityComponent.spec.ts
+        |
+        | -- mockCelebrityService
+      |
+      | -- entityTest 
+      |
+        | --  celebrityTest.spec.ts
+      |
+      | -- serviceTest
+      |
+        |-- apiServiceTest.spec.ts
+        |
+        | -- celebrityServiceTest.spec.ts
+        |
+        | -- inMemCelebrityMockService.ts
+        |
+        | -- mockAPIService
+      |
+    |
   
 
 ## Further help
