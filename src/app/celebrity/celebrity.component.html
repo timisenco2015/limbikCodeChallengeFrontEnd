@@ -1,0 +1,77 @@
+
+      <div class="cotainer-fluid" >
+
+      <div class="row" >
+            <div class="col-3 sectionA" >
+      
+            </div>
+            <div class=" col-sm-12 col-md-12 col-lg-6 sectionB" >
+            <div class="row" >
+                  <div class="col-12"  >
+                              <div class="row">
+                                    <div class="col-12" >
+                                          <div class="table-responsive-sm table-responsive-md ">
+                                          <table class="table">
+                                                <thead > 
+                                                      <tr>
+                                                            <th scope="col">Firstname:  </th>
+                                                            <th scope="col">Lastname:  </th>
+                                                            <th scope="col">Profession: </th>
+                                                      </tr>
+                                                      <tr>
+                                                            <td scope="col"> <input id="firstname" type = "text"  name="firstname" (keyup)="columnFilter($event)" > </td>
+                                                            <td scope="col"> <input id="lastname" type = "text"  name="lastname" (keyup)="columnFilter($event)" > </td>
+                                                            <td scope="col">  <input id="profession" type = "text"  name="profession" (keyup)="columnFilter($event)" > </td>
+                                                            </tr>
+                                                </thead>
+                                                </table>
+                                          </div>
+                                    </div>
+                              </div>
+                  
+                              <div class="row" *ngFor="let item of collection | paginate: { itemsPerPage: 1, currentPage: p }">
+                                    <div class="col-8" >
+                                          <img [src]="'data:image/jpg;base64,'+item.profile" height="400" width="400" class="img-fluid rounded mx-auto d-block" alt="Responsive image"/>    
+                  
+                                    </div>
+                                    <div class="col-4" style="background-color: #EAEDED;">
+                                          <div class="row">
+                                                <div class="col-12">
+                                                      <p><label>Firstname: </label>  {{ item.firstName }} </p>
+                                                </div>
+                                          </div>
+                                          <div class="row">
+                                                <div class="col-12">
+                                                      <p><label>lastname: </label>  {{ item.lastName}}</p>
+                                                </div>
+                                          </div>
+                                          <div class="row">
+                                                <div class="col-12">
+                                                      <p><label>Profession: </label>  {{ item.profession }}</p>
+                                                     
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                              
+                        <div class="row mt-5" >
+                              <div class="col-12">
+                                    <pagination-controls (pageChange)="p = $event"></pagination-controls>
+                              </div>
+                        </div>
+                  </div> 
+                  </div>
+                  
+                  
+            </div>
+            <div class="col-3 sectionC" >
+      
+            </div>
+      </div>
+
+      </div>
+
+      <ngx-spinner class="__loader" bdColor="rgba(0,0,0,0.9)" size="default" color="#fff" type="ball-scale-pulse"
+      [fullScreen]="true">
+      <p style="color: #ffffff"> Loading... </p>
+      </ngx-spinner>
