@@ -110,7 +110,15 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
     
     - celebrity.component.css: css file
   
-  -
+  - Test Files
+    
+    - celebrityTest
+    
+    - entityTest
+    
+    - serviceTest
+    
+    Well written test files using Jasmine and Karma
     
       
       
