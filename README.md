@@ -101,6 +101,18 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
   - celebrity (entity folder): is the celebrity class
   
       -- methods are: setId(id:number), getId(), setFirstName(firstName:string), getFirstName(), setLastName(lastName:string), getLastName(), setProfession(profession:string),  getProfession(), setProfile(profile:any), getProfile()
+  
+  - component (celebrity): View and Controll of the angular application
+    
+    - celebrity.component.ts file: controller of the angular web applications. fecthes data from database Celebrity Service class, process the data and sent needed data to the view for display
+    
+    - celebrity.component.html: the view
+    
+    - celebrity.component.css: css file
+  
+  -
+    
+      
       
       
 ## Further help
