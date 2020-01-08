@@ -27,6 +27,7 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
 ## Build Code Structure
+```bash
 | -- src
   |
   | -- app 
@@ -73,7 +74,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
         | -- mockAPIService
       |
     |
-  
+  ```
 
 ## Further help
 
