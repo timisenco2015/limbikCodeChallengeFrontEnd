@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
 
+## Description
+
+A simple web page that fectches list of all celebrities from the database and display them to users using pagination. Users are allow to search by Firstname, Lastname and profession. The images for the celebrities are stored on AWS S3Bucket. It also implemented caching using rxjs mehthods. It is a well tested web application
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
