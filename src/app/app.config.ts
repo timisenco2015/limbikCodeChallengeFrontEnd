@@ -8,8 +8,8 @@ export interface AppConfigInterface {
 export const APP_CONFIG = new InjectionToken('app.config');
 export const AppConfig: AppConfigInterface = {
  
-   // GETCELEBRITY_ENDPOINT: 'http://localhost:1388/',
-  GETCELEBRITY_ENDPOINT: 'http://localhost:8080/api/' //for testing purpose
+    GETCELEBRITY_ENDPOINT: 'http://localhost:1388/',
+  //GETCELEBRITY_ENDPOINT: 'http://localhost:8080/api/' //for testing purpose
     
   
 };
